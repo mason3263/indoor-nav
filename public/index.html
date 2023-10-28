@@ -1,5 +1,123 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00496b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            outline: none;
+        }
+
+        option {
+            font-size: 16px;
+        }
+
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Ohio State Union Navigator</h1>
+    </header>
+
+    
+    
+    <div class="container">
+
+        <form action="/action/">
+
+        <h2>Enter current location</h2>
+        <p><label for="start">currwnt location:</label>
+            
+    <select id="start" name="start">
+        <option value="option1"></option>
+        <option value="option1">North Entrance</option>
+        <option value="option2">South Entrance</option>
+        <option value="option3">Performance Hall</option>
+        <option value="option4">Cartoon Room</option>
+        <option value="option4">Archie Griffin Ballroom</option>
+    </select></p>
+
+        <h2>Enter your desired destination</h2>
+        <p><label for="end">Destination:</label>
+            <select id="end" name="end">
+                <option value="option1"></option>
+                <option value="option1">Performance Hall</option>
+                <option value="option2">Archie Griffin Ballroom</option>
+                <option value="option3">2nd floor bathroom</option>
+                <option value="option4">North Entrance</option>
+                <option value="option4">Cartoon Room</option>
+            </select></p>
+            <input type = "submit">
+
+          </form>
+</div>
+
+    <footer>
+    </footer>
 </body>
 </html>
